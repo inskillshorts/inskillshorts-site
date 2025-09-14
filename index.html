@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>InSkillShorts — Learn smarter in 60 seconds</title>
+  <meta name="description" content="InSkillShorts is a micro-learning app with short, practical tips in Money, Career, Health, Tech, Govt & Life — in your language." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="InSkillShorts — Learn smarter in 60 seconds" />
+  <meta property="og:description" content="Daily, practical micro-tips. English • हिंदी • বাংলা • ಕನ್ನಡ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inskillshorts.com" />
+  <meta property="og:image" content="https://inskillshorts.com/assets/logo.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+  <style>
+    :root{
+      --bg:#0b1220;--card:#0e1629;--muted:#97a3b6;--brand:#0ea5e9;--brand-2:#22c55e;--text:#e6eefc;
+      --border:#1d273c;--card2:#0f1a30;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{position:sticky;top:0;z-index:10;backdrop-filter:saturate(140%) blur(6px);background:rgba(11,18,32,.6);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:10px 0 8px}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.2px}
+    .brand img{width:34px;height:34px;border-radius:8px;display:block}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #24314a;background:#111a2d;color:#eaf2ff;font-weight:700}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#38bdf8);border-color:transparent}
+    .btn.ghost{background:transparent;border-color:#24314a}
+
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;padding:28px 0}
+    .hero h1{font-size:clamp(30px,6vw,48px);line-height:1.05;margin:6px 0 12px}
+    .hero p{color:var(--muted);font-size:clamp(15px,2.3vw,17px)}
+    .tag{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:var(--card2);border:1px solid var(--border);color:#b6c3d9;font-weight:700;font-size:13px}
+
+    form{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    input[type="email"],input[type="text"]{padding:10px 12px;border-radius:10px;border:1px solid #26324a;background:var(--card2);color:#e6eefc;min-width:260px}
+    .note{color:#9fb0c9;font-size:12px;margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px}
+    .card h3{margin:4px 0 8px;font-size:16px}
+    .card p{margin:0;color:#b8c6da;font-size:14px;line-height:1.45}
+    .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .pill{font-size:12px;color:#9fb0c9;border:1px solid #26324a;background:#101a2e;border-radius:999px;padding:6px 10px}
+
+    .phone{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:20px;aspect-ratio:9/16;max-height:560px}
+    .shot{background:var(--card2);border:1px solid #1f2a44;border-radius:16px;padding:14px;margin-bottom:12px}
+    .shot .cat{color:#9ec7ff;font-weight:700;font-size:12px}
+    .shot .title{font-size:16px;font-weight:800;margin:6px 0}
+    .shot .desc{color:#c9d6ea;font-size:14px}
+    .shot .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+    .small{font-size:12px;color:#8ea3c3}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0 30px}
+    .feature{padding:16px;border-radius:16px;background:var(--card2);border:1px solid var(--border)}
+    .feature h4{margin:6px 0 8px}
+
+    .footer{border-top:1px solid var(--border);margin-top:26px;padding:18px 0;color:#9fb0c9;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- NAV -->
+    <header class="nav">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="InSkillShorts logo" />
+        <span>InSkillShorts</span>
+      </a>
+      <nav class="cta">
+        <a class="btn ghost" href="mailto:hello@inskillshorts.com">Contact</a>
+        <!-- Replace when live -->
+        <a class="btn primary" href="#">Get the App</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <span class="tag">🇮🇳 Daily Micro-Learning • English • हिंदी • বাংলা • ಕನ್ನಡ</span>
+        <h1>Learn smarter in 60 seconds.</h1>
+        <p>Practical tips for Money, Career, Health, Tech, Govt & Life — short, local, and useful. Built for India’s hustlers: gig workers, learners and doers.</p>
+
+        <!-- WAITLIST FORM -->
+        <form id="waitlist" action="https://formspree.io/f/mnnbreqw" method="POST">
+          <input type="email" name="email" placeholder="Enter your email to join the waitlist" required />
+          <input type="hidden" name="_subject" value="New InSkillShorts waitlist signup" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button class="btn primary" type="submit">Join Waitlist</button>
+        </form>
+        <div id="waitlist-msg" class="note" style="display:none;"></div>
+
+        <!-- Category cards -->
+        <div class="grid">
+          <div class="card">
+            <h3>💰 Money</h3>
+            <p>₹-wise tips: UPI Autopay, savings hacks, credit basics.</p>
+            <div class="pillrow"><span class="pill">UPI</span><span class="pill">Savings</span><span class="pill">Credit</span></div>
+          </div>
+          <div class="card">
+            <h3>💼 Career</h3>
+            <p>Work smarter: customer greet, resume lines, interview cues.</p>
+            <div class="pillrow"><span class="pill">Etiquette</span><span class="pill">Resume</span><span class="pill">Interview</span></div>
+          </div>
+          <div class="card">
+            <h3>📱 Tech</h3>
+            <p>Phone skills: scan docs, cloud backup, WhatsApp safety.</p>
+            <div class="pillrow"><span class="pill">Scan</span><span class="pill">Backup</span><span class="pill">Safety</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Static app preview -->
+      <div class="phone" aria-label="App preview">
+        <div class="shot">
+          <div class="cat">💰 Money</div>
+          <div class="title">Auto-save with UPI Autopay</div>
+          <div class="desc">Set ₹X to savings every 1st. Habit builds itself.</div>
+          <div class="meta"><span class="small">👍 Useful</span><span class="small">Share ↗</span></div>
+        </div>
+        <div class="shot">
+          <div class="cat">📱 Tech</div>
+          <div class="title">Scan documents with Google Drive</div>
+          <div class="desc">Drive → + → Scan → Save as PDF. Done.</div>
+          <div class="meta"><span class="small">👍 Useful</span><span class="small">Share ↗</span></div>
+        </div>
+        <div class="shot">
+          <div class="cat">💼 Career</div>
+          <div class="title">Greet customers with a smile</div>
+          <div class="desc">“Hello Sir/Ma’am, how can I help you?”</div>
+          <div class="meta"><span class="small">👍 Useful</span><span class="small">Share ↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" aria-label="Why">
+      <div class="feature"><h4>⚡ Super quick</h4><p>Each tip takes ~60 seconds. Tiny steps, big gains.</p></div>
+      <div class="feature"><h4>🌐 Multilingual</h4><p>English, हिंदी, বাংলা, ಕನ್ನಡ. More coming soon.</p></div>
+      <div class="feature"><h4>🎯 Real ROI</h4><p>Every tip aims to save money, time, or improve work results.</p></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>© <span id="year"></span> InSkillShorts</div>
+      <div>
+        <a href="mailto:hello@inskillshorts.com">hello@inskillshorts.com</a>
+        &nbsp;·&nbsp; <a href="/privacy.html">Privacy</a>
+        &nbsp;·&nbsp; <a href="/terms.html">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // AJAX submit for Formspree
+    (function () {
+      const form = document.getElementById('waitlist');
+      const msg  = document.getElementById('waitlist-msg');
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: data
+          });
+
+          form.reset();
+          msg.style.display = 'block';
+          msg.textContent = res.ok
+            ? '✅ Thanks! You’re on the waitlist. We’ll email you when the app is live.'
+            : '⚠️ Something went wrong. Please try again or email hello@inskillshorts.com.';
+        } catch (err) {
+          msg.style.display = 'block';
+          msg.textContent = '⚠️ Network error. Please try again.';
+        }
+      });
+    })();
+
+    // (Optional) GA4
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'G-XXXXXXX');
+  </script>
+</body>
+</html>
